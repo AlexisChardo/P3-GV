@@ -29,3 +29,36 @@ main  .city {
     justify-content: center;
     gap: 15px;
 }
+
+/*RESERVATION*/
+
+.reservation {
+    text-align: center;
+    background-color: #fafafa;
+}
+.reservation h2 {
+    margin: 0;
+    font-size: 32px;
+    padding-top: 32px;
+}
+.reservation p {
+    font-size: 24px;
+    color: #666666;
+}
+.reservation button {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 5px black;
+    background-image: linear-gradient( to top, #9356DC, #ff79da);
+    transition: transform 200ms;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+.reservation button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
