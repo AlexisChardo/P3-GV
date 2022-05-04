@@ -11,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*HEADER*/
 .mainHeader {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -20,7 +21,8 @@ body {
   position: relative;
 }
 
-main .city {
+/*CITY*/
+.city {
   background-color: #f3f3f3;
   text-align: center;
   padding: 1%;
@@ -30,23 +32,19 @@ main .city {
   gap: 15px;
 }
 
-/*RESERVATION*/
 .reservation {
   text-align: center;
   background-color: #fafafa;
 }
-
 .reservation h2 {
   margin: 0;
   font-size: 32px;
   padding-top: 32px;
 }
-
 .reservation p {
   font-size: 24px;
   color: #666666;
 }
-
 .reservation button {
   color: white;
   font-weight: 400;
@@ -54,16 +52,27 @@ main .city {
   padding: 16px 32px;
   border: none;
   border-radius: 25px;
-  box-shadow: 0 0 5px black;
   background-image: linear-gradient(to top, #9356DC, #ff79da);
   transition: transform 200ms;
   margin-top: 8px;
   margin-bottom: 32px;
+  box-shadow: 0 0 5px black;
 }
-
 .reservation button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+}
+
+.function li {
+  background-color: #f6f6f6;
+  padding: 16px 32px;
+  border: 1px solid black;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
+}
+.function li:hover {
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=style.css.map */
