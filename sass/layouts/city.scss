@@ -1,6 +1,7 @@
-/*CITY*/
+@use "../utils/colors.scss";
+
 .city {
-    background-color: #f3f3f3;
+    background-color: colors.$background1;
     text-align: center;
     padding: 1%;
     display: flex;
