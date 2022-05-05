@@ -1,10 +1,20 @@
 @use "../utils/colors.scss";
+@use "../utils/box-shadow.scss";
 
 .menus {
     background-color: colors.$background3;
     & .restaurants {
         display: flex;
         flex-direction: column;
+    }
+    & .single__card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid colors.$background1;
+        margin: 0 3%;
+        border-radius: 25px 25px 25px 25px;
+        margin-bottom: 10%;
+        @include box-shadow.base-shadow;
     }
      & .new {
         position: relative;
@@ -27,7 +37,6 @@
             object-fit: cover;
             object-position: center;
             border-radius: 25px 25px 0 0;
-            padding: 0% 3%;
         }
        & .text-decoration {
            position: relative;
