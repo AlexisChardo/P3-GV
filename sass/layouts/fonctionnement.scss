@@ -22,6 +22,9 @@
             bottom: variables.$base-height;
             left: -1 * variables.$base-height;
         }
+        &__modifier {
+            background-color: colors.$li-background;
+        }
         list-style-type: none;
         background-color: colors.$background3;
         padding: 24px 32px;
@@ -32,13 +35,16 @@
         @include box-shadow.base-shadow;
          &:hover {
              @include zoom.transform-zoom;
-            }
+            }     
         & i {
             color: colors.$icon-color;
             margin-right: 16px;
             font-size: 24px;
             position: absolute;
             left: 13%;
+        }
+         & .i2 {
+            color: colors.$primary;
         }
     }
 }
