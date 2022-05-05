@@ -1,0 +1,16 @@
+@use "../utils/colors.scss";
+
+footer {
+    background-color: colors.$color-footer;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    & .logoFooter {
+        font-family: "Shrikhand";
+    }
+    & p {
+       margin: 0;
+       padding: 10px 0;
+    }
+}

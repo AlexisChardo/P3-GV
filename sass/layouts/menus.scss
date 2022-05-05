@@ -1,5 +1,6 @@
 @use "../utils/colors.scss";
 @use "../utils/box-shadow.scss";
+@use  "../utils/linear-gradient.scss";
 
 .menus {
     background-color: colors.$background3;
@@ -7,57 +8,69 @@
         display: flex;
         flex-direction: column;
     }
-    & .single__card {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid colors.$background1;
-        margin: 0 3%;
-        border-radius: 25px 25px 25px 25px;
-        margin-bottom: 10%;
-        @include box-shadow.base-shadow;
-    }
-     & .new {
-        position: relative;
+        & .single__card {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid colors.$background1;
+            margin: 0 3%;
+            border-radius: 25px 25px 25px 25px;
+            margin-bottom: 10%;
+            @include box-shadow.base-shadow;
         }
-        .new::before {
-            content: "Nouveau";
-            position: absolute;
-            height: 25px;
-            width: 80px;
-            background-color: colors.$third;
-            color: darken(colors.$third, $amount: 50%);
-            display: grid;
-            place-items: center;
-            right: 24px;
-            top: 16px;
-        }
-        & img {
-            height: 200px;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 25px 25px 0 0;
-        }
+            & .new {
+                position: relative;
+                }
+                .new::before {
+                    content: "Nouveau";
+                    position: absolute;
+                    height: 25px;
+                    width: 80px;
+                    background-color: colors.$third;
+                    color: darken(colors.$third, $amount: 50%);
+                    display: grid;
+                    place-items: center;
+                    right: 24px;
+                    top: 16px;
+                }
+                & img {
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 25px 25px 0 0;
+                }
        & .text-decoration {
            position: relative;
-       }
-       & i {
-           font-size: 25px;
-           position: absolute;
-           top: 50%;
-           right: 7%;
-           transform: translateY(-50%);
-       }
-       & p {
-           margin-left: 5%;
-       }
-       & .p1 {
-           margin-top: 10px;
-           margin-bottom: 0px;
-       }
-       & .p2 {
-           margin-top: 5px;
-           margin-bottom: 20px;
-       }
+           & i {
+               font-size: 25px;
+               position: absolute;
+               top: 50%;
+               right: 7%;
+               transform: translateY(-50%);
+            }
+            & p {
+                margin-left: 5%;
+            }
+            & .p1 {
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+            & .p2 {
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+            & .fas  {
+                color: transparent;
+                @include linear-gradient.degrade ;
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+                transition: all 400ms ease-in-out;
+            }
+            & .fas:hover {
+                opacity: 1;
+                transform: translateY(-50%) scale(1.2);
+            }
+        }
         
 }
