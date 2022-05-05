@@ -90,7 +90,7 @@ body {
   bottom: 16px;
   left: -16px;
 }
-.function .li__modifier {
+.function li__modifier {
   background-color: #f5edff;
 }
 .function li:hover {
@@ -105,6 +105,58 @@ body {
 }
 .function li .i2 {
   color: #9356dc;
+}
+
+.menus {
+  background-color: #f6f6f6;
+}
+.menus .restaurants {
+  display: flex;
+  flex-direction: column;
+}
+.menus .new {
+  position: relative;
+}
+.menus .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 25px;
+  width: 80px;
+  background-color: #99e2d0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 24px;
+  top: 16px;
+}
+.menus img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px 25px 0 0;
+  padding: 0% 3%;
+}
+.menus .text-decoration {
+  position: relative;
+}
+.menus i {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  transform: translateY(-50%);
+}
+.menus p {
+  margin-left: 5%;
+}
+.menus .p1 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.menus .p2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
