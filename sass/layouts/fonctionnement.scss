@@ -21,10 +21,7 @@
             position: absolute;
             bottom: variables.$base-height;
             left: -1 * variables.$base-height;
-        }
-        &__modifier {
-            background-color: colors.$li-background;
-        }
+        } 
         list-style-type: none;
         background-color: colors.$background3;
         padding: 24px 32px;
@@ -32,6 +29,7 @@
         border-radius: 20px;
         text-align: center;
         width: 90%;
+     
         @include mixin.base-shadow;
          &:hover {
              @include mixin.transform-zoom;
@@ -46,5 +44,10 @@
          & .i2 {
             color: colors.$primary;
         }
+       
+       
     }
+}
+#bgmodifier {
+    background-color: colors.$li-background;
 }

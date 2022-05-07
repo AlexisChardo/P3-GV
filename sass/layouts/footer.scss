@@ -6,12 +6,15 @@ footer {
     display: flex;
     flex-direction: column;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
     & .logoFooter {
         font-family: "Shrikhand";
+        font-size: 20px;
     }
     & p {
        margin: 0;
-       padding: 10px 0;
+       padding: 5px 0;
     }
     & i {
         width: 10%;

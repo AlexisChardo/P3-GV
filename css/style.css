@@ -55,7 +55,7 @@ a {
 }
 .reservation button {
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   padding: 16px 32px;
   border: none;
@@ -99,6 +99,9 @@ a {
   bottom: 16px;
   left: -16px;
 }
+.function li__modifier {
+  background-color: #f5edff;
+}
 .function li:hover {
   transform: scale(1.02);
 }
@@ -113,13 +116,8 @@ a {
   color: #9356dc;
 }
 
-#bgmodifier {
-  background-color: #f5edff;
-}
-
 .menus {
   background-color: #f6f6f6;
-  padding-top: 10px;
 }
 .menus .restaurants {
   display: flex;
@@ -132,7 +130,7 @@ a {
   margin: 0 3%;
   border-radius: 25px 25px 25px 25px;
   margin-bottom: 10%;
-  box-shadow: 0 0 2px black;
+  box-shadow: 0 0 5px black;
 }
 .menus .new {
   position: relative;
@@ -196,16 +194,13 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
-  padding-top: 10px;
-  padding-bottom: 20px;
 }
 footer .logoFooter {
   font-family: "Shrikhand";
-  font-size: 20px;
 }
 footer p {
   margin: 0;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 footer i {
   width: 10%;

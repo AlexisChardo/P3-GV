@@ -3,6 +3,7 @@
 
 .menus {
     background-color: colors.$background3;
+    padding-top: 10px;
     & .restaurants {
         display: flex;
         flex-direction: column;
@@ -14,7 +15,7 @@
             margin: 0 3%;
             border-radius: 25px 25px 25px 25px;
             margin-bottom: 10%;
-            @include mixin.base-shadow;
+            box-shadow: 0 0 2px black;
         }
             & .new {
                 position: relative;
