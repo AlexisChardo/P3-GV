@@ -1,8 +1,7 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/zoom.scss";
+
 @use  "../utils/variables.scss";
 @use "../utils/colors.scss";
-
+@use  "../utils/mixin.scss";
 
 
 .function {
@@ -33,9 +32,9 @@
         border-radius: 20px;
         text-align: center;
         width: 90%;
-        @include box-shadow.base-shadow;
+        @include mixin.base-shadow;
          &:hover {
-             @include zoom.transform-zoom;
+             @include mixin.transform-zoom;
             }     
         & i {
             color: colors.$icon-color;

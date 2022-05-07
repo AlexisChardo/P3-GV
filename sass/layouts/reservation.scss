@@ -1,6 +1,5 @@
-@use  "../utils/box-shadow.scss";
-@use  "../utils/zoom.scss";
 @use "../utils/colors.scss";
+@use  "../utils/mixin.scss";
 
 
 .reservation {
@@ -26,10 +25,10 @@
           transition: transform 200ms;
           margin-top: 8px;
           margin-bottom: 32px;
-          @include box-shadow.base-shadow;
+          @include mixin.base-shadow;
       }
       & button:hover {
-          @include zoom.transform-zoom;
+          @include mixin.transform-zoom;
           opacity: 0.9;
       }
   }

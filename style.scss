@@ -3,7 +3,7 @@
 @use  "./sass/layouts/city.scss" ;
 @use  "./sass/layouts/reservation.scss";
 @use  "./sass/layouts/fonctionnement.scss";
-@use  "./sass/utils/box-shadow.scss";
-@use  "./sass/utils/zoom.scss";
 @use  "./sass/layouts/menus.scss";
 @use  "./sass/layouts/footer.scss";
+@use "./sass/utils/mixin.scss";
+@use "./sass/layouts/loader.scss";

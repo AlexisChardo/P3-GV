@@ -1,0 +1,37 @@
+@use "../utils/colors.scss";
+@use  "../utils/variables.scss";
+
+.loader {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    animation: disappear 100ms variables.$animation-duration * variables.$animation-count forwards;
+    transform-origin: top;
+    &::after {
+        content: "";
+        height: 100px;
+        width: 100px;
+        border-right: 5px solid colors.$primary ;
+        border-top: 5px solid colors.$secondary;
+        border-left: 5px solid colors.$third;
+        border-radius: 50%;
+        animation: spin variables.$animation-duration ease-in-out;
+        animation-iteration-count: variables.$animation-count;
+    }
+}
+
+@keyframes disappear {
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
