@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+    & p {
+        font-weight: 500 ;
+        color: #414141;
+    }
 }
 
 .function {
@@ -68,11 +72,10 @@
         & .single__card {
             display: flex;
             flex-direction: column;
-            border: 1px solid variables.$background1;
             margin: 0 3%;
             border-radius: 25px 25px 25px 25px;
             margin-bottom: 10%;
-            box-shadow: 0 0 2px black;
+           @include mixin.base-shadow
         }
             & .new {
                 position: relative;
@@ -88,6 +91,7 @@
                     place-items: center;
                     right: 24px;
                     top: 16px;
+                    border-radius: 5px;
                 }
                 & img {
                     height: 200px;
@@ -151,7 +155,7 @@
           padding: 16px 32px;
           border: none;
           border-radius: 25px;
-          background-image: linear-gradient(to top, variables.$primary, variables.$secondary);
+          background-image: linear-gradient(to left top, variables.$primary, variables.$secondary);
           transition: transform 200ms;
           margin-top: 8px;
           margin-bottom: 32px;
