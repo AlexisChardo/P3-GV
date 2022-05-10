@@ -4,7 +4,8 @@
   "description": "Open classroom projet 3 \"ohmyfood\"",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "sass2": "sass --watch sass/main.scss:css/style.css"
   },
   "repository": {
     "type": "git",
