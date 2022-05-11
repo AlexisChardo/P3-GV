@@ -2,35 +2,57 @@
 @use  "../utils/mixin.scss";
 
 
-
+.cbc-menu {
+    background-color: variables.$background3;
+    padding-bottom: 50px;
+}
 .cbc-menu h2 {
     font-family: "Shrikhand", sans-serif;
     padding: 10px;
     margin: 0;
+    margin-left: 3%;
 }
 
 
 .subtitle-menu {
     display: flex;
     position: relative;
-    
-    & i {
-        font-size: 25px;
-        position: absolute;
-        top: 50%;
-        right: 7%;
-        transform: translateY(-50%);
+    margin-top: -35px;
+    background-color: variables.$background3;
+    border-radius: 35px 35px 0 0;
+    & { @include mixin.animated-heart}
+}
+
+.div-global {
+    display: flex;
+    flex-direction: column;
+}
+.p-header-title {
+    margin-left: 3%;
+}
+.div-menu {
+    display: flex;
+    @include mixin.base-shadow-menu;
+    border-radius: 25px;
+    background-color: white;
+    margin: 0 3%;
+    & p {
+        padding-left: 10px;
     }
-    & .fas  {
-        color: transparent;
-        @include mixin.degrade ;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0;
-        transition: all 400ms ease-in-out;
+    & .p-title {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 10px 0;
     }
-    & .fas:hover {
-        opacity: 1;
-        transform: translateY(-50%) scale(1.12);
+    & .p-subtitle {
+        color: #5f5f5f;
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
+}
+.div-price {
+    align-items: center;
+    margin-left: auto;
+    display: flex;
 }
