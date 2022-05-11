@@ -7,3 +7,25 @@
 @mixin transform-zoom {
     transform: scale(1.02);
 }
+
+@mixin animated-heart {
+    & i {
+        font-size: 25px;
+        position: absolute;
+        top: 50%;
+        right: 7%;
+        transform: translateY(-50%);
+    }
+    & .fas  {
+        color: transparent;
+        @include degrade ;
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 400ms ease-in-out;
+    }
+    & .fas:hover {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.12);
+    }
+}
