@@ -184,6 +184,36 @@ a {
   opacity: 0.9;
 }
 
+.cbc-menu h2 {
+  font-family: "Shrikhand", sans-serif;
+  padding: 10px;
+  margin: 0;
+}
+
+.subtitle-menu {
+  display: flex;
+  position: relative;
+}
+.subtitle-menu i {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  transform: translateY(-50%);
+}
+.subtitle-menu .fas {
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+.subtitle-menu .fas:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.12);
+}
+
 footer {
   background-color: #353535;
   padding-left: 5%;
@@ -213,6 +243,25 @@ footer i {
   padding: 0.3% 0;
   margin: 0;
   position: relative;
+}
+
+.menupage {
+  display: flex;
+  box-shadow: none;
+}
+.menupage h1 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+}
+.menupage a {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.menupage i {
+  color: #353535;
+  font-size: 20px;
 }
 
 .loader {
@@ -247,6 +296,10 @@ footer i {
   to {
     transform: rotate(360deg);
   }
+}
+.image-menu {
+  width: 100%;
+  height: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
