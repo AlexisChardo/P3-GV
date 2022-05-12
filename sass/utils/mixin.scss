@@ -12,6 +12,11 @@
 @mixin transform-zoom {
     transform: scale(1.02);
 }
+@mixin three-points {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
 
 @mixin animated-heart {
     & i {
@@ -33,4 +38,16 @@
         opacity: 1;
         transform: translateY(-50%) scale(1.12);
     }
+}
+
+@mixin check-spin {
+    @keyframes check-spin {
+        0% {
+            transform: rotate(-270deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
+    
 }

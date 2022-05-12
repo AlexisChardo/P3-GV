@@ -30,12 +30,21 @@
 .p-header-title {
     margin-left: 3%;
 }
+.div-allmenu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px ;
+}
 .div-menu {
     display: flex;
     @include mixin.base-shadow-menu;
     border-radius: 25px;
     background-color: white;
     margin: 0 3%;
+    @include mixin.three-points;
+    & .div-menu__text {
+       @include mixin.three-points;
+    }
     & p {
         padding-left: 10px;
     }
@@ -43,16 +52,53 @@
         font-weight: 600;
         font-size: 18px;
         margin: 10px 0;
+        @include mixin.three-points;
     }
     & .p-subtitle {
         color: #5f5f5f;
         font-size: 15px;
         margin-top: 0;
         margin-bottom: 10px;
+        @include mixin.three-points;
     }
 }
+
 .div-price {
-    align-items: center;
+    align-items: end;
     margin-left: auto;
     display: flex;
+    color: #525252;
+    font-weight: 800;
+    padding-right: 10px;
+}
+.div-hover {
+    background-color: variables.$third;
+    margin-right: - variables.$button-width;
+    width: variables.$button-width;
+    transition: all 0.5s;
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    & i {
+        display: grid;
+        place-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: white;
+        color: variables.$third;
+
+    }
+}
+
+.div-menu:hover {
+    .div-hover {
+    margin-right: 0;
+    min-width: variables.$button-width;
+}
+& i {
+    @include mixin.check-spin;
+    animation: check-spin 0.5s;
+    
+}
 }
