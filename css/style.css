@@ -319,7 +319,7 @@ a {
   min-width: 80px;
 }
 .div-menu:hover i {
-  animation: check-spin 0.5s;
+  animation: check-spin 0.7s;
 }
 @keyframes check-spin {
   0% {
