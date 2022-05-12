@@ -231,6 +231,16 @@ a {
 .p-header-title {
   margin-left: 3%;
   margin-bottom: 25px;
+  position: relative;
+}
+.p-header-title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  background-color: #99e2d0;
+  top: 20px;
+  left: 0px;
 }
 
 .div-allmenu {
@@ -318,6 +328,12 @@ a {
   100% {
     transform: rotate(0);
   }
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+  margin-top: 40px;
 }
 
 footer {
@@ -408,6 +424,25 @@ footer i {
   height: 300px;
   object-fit: cover;
   object-position: center;
+}
+
+button {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(to left top, #9356dc, #ff79da);
+  transition: transform 200ms;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  box-shadow: 2px 2px 0px lightgrey;
+}
+
+button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

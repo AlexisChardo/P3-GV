@@ -2,6 +2,7 @@
 @use  "../utils/mixin.scss";
 
 
+
 .cbc-menu {
     background-color: variables.$background3;
     padding-bottom: 50px;
@@ -30,6 +31,16 @@
 .p-header-title {
     margin-left: 3%;
     margin-bottom: 25px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 40px;
+        background-color: variables.$third;
+        top: 20px;
+        left: 0px;
+    }
 }
 .div-allmenu {
     display: flex;
@@ -103,4 +114,10 @@
     animation: check-spin 0.5s;
     
 }
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
 }

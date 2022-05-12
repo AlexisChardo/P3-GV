@@ -1,6 +1,5 @@
-
-@use  "/sass/utils/mixin.scss";
-@use "/sass/utils/variables.scss";
+@use "../utils/mixin.scss";
+@use "../utils/variables.scss";
 
 button {
     color: white;
@@ -9,13 +8,13 @@ button {
     padding: 16px 32px;
     border: none;
     border-radius: 25px;
-    background-image: linear-gradient(to top, variables.$primary, variables.$secondary);
+    background-image: linear-gradient(to left top, variables.$primary, variables.$secondary);
     transition: transform 200ms;
     margin-top: 8px;
     margin-bottom: 32px;
     @include mixin.base-shadow;
 }
-& button:hover {
+ button:hover {
     @include mixin.transform-zoom;
     opacity: 0.9;
 }
