@@ -58,6 +58,14 @@
        
     }
 }
+@media (min-width : 900px) {
+ol {
+    display: flex;
+    gap: 40px;
+    margin-right: 3%;
+}
+}
+
 #bgmodifier {
     background-color: variables.$li-background;
 }
@@ -117,6 +125,15 @@
             }
         }
         
+}
+@media (min-width : 900px) {
+    .restaurants__dual {
+        display: flex;
+    }
+    .single__card {
+        flex-basis: 50%;
+        justify-content: space-evenly;
+    }
 }
 
 .reservation {

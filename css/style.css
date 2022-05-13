@@ -86,6 +86,13 @@ a {
   color: #9356dc;
 }
 
+@media (min-width: 900px) {
+  ol {
+    display: flex;
+    gap: 40px;
+    margin-right: 3%;
+  }
+}
 #bgmodifier {
   background-color: #f5edff;
 }
@@ -163,6 +170,16 @@ a {
   margin-bottom: 20px;
 }
 
+@media (min-width: 900px) {
+  .restaurants__dual {
+    display: flex;
+  }
+
+  .single__card {
+    flex-basis: 50%;
+    justify-content: space-evenly;
+  }
+}
 .reservation {
   text-align: center;
   background-color: #fafafa;
@@ -378,7 +395,7 @@ footer p {
   padding: 5px 0;
 }
 footer i {
-  width: 10%;
+  width: 30px;
 }
 
 /*HEADER*/
