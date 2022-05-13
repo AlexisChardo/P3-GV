@@ -49,6 +49,13 @@
     margin-bottom: 20px;
 }
 .div-menu {
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+          animation-delay: 100ms * $i;
+      }  
+    }
+    animation: appear 1s;
+    animation-fill-mode: both;
     display: flex;
     @include mixin.base-shadow-menu;
     border-radius: 25px;
