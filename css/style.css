@@ -281,6 +281,9 @@ a {
 .div-menu:nth-child(3) {
   animation-delay: 300ms;
 }
+.div-menu:nth-child(4) {
+  animation-delay: 400ms;
+}
 .div-menu .div-menu__text {
   overflow: hidden;
   white-space: nowrap;
