@@ -1,11 +1,15 @@
-@use  "./bases.scss";
-@use  "./pages/accueil.scss";
-@use  "./pages/Menu1.scss";
+@use  "./directory/bases.scss";
+
+@use  "./components/bouton.scss";
+
 @use "./layouts/footer.scss";
 @use "./layouts/header.scss";
 @use "./layouts/loader.scss";
-@use  "./layouts/image-menu.scss";
-@use  "./utils/mixin.scss";
-@use "./utils/variables.scss";
-@use  "./components/bouton.scss";
+@use "./layouts/image-menu.scss";
+
+@use "./pages/accueil.scss";
+@use "./pages/Menu.scss";
+
+
+
 
