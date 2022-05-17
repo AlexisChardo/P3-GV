@@ -39,7 +39,7 @@
         border-radius: 20px;
         text-align: center;
         width: 90%;
-     
+        min-width: 300px;
         @include mixin.base-shadow;
          &:hover {
              @include mixin.transform-zoom;
@@ -58,12 +58,13 @@
        
     }
 }
-@media (min-width : 900px) {
+@media (min-width : 1070px) {
 ol {
     display: flex;
     gap: 40px;
     margin-right: 3%;
 }
+
 }
 
 #bgmodifier {

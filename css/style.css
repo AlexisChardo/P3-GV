@@ -165,6 +165,7 @@ footer i {
   border-radius: 20px;
   text-align: center;
   width: 90%;
+  min-width: 300px;
   box-shadow: 2px 2px 10px lightgrey;
 }
 .function li::before {
@@ -195,7 +196,7 @@ footer i {
   color: #9356dc;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1070px) {
   ol {
     display: flex;
     gap: 40px;
