@@ -384,6 +384,38 @@ footer i {
   flex-direction: column;
   gap: 25px;
   margin-bottom: 20px;
+  animation: appear 1s;
+  animation-fill-mode: both;
+}
+.div-allmenu:nth-child(1) {
+  animation-delay: 300ms;
+}
+.div-allmenu:nth-child(2) {
+  animation-delay: 600ms;
+}
+.div-allmenu:nth-child(3) {
+  animation-delay: 900ms;
+}
+.div-allmenu:nth-child(4) {
+  animation-delay: 1200ms;
+}
+.div-allmenu:nth-child(5) {
+  animation-delay: 1500ms;
+}
+.div-allmenu:nth-child(6) {
+  animation-delay: 1800ms;
+}
+.div-allmenu:nth-child(7) {
+  animation-delay: 2100ms;
+}
+.div-allmenu:nth-child(8) {
+  animation-delay: 2400ms;
+}
+.div-allmenu:nth-child(9) {
+  animation-delay: 2700ms;
+}
+.div-allmenu:nth-child(10) {
+  animation-delay: 3000ms;
 }
 
 .div-menu {

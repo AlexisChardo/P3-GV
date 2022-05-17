@@ -47,6 +47,13 @@
     flex-direction: column;
     gap: 25px ;
     margin-bottom: 20px;
+    animation: appear 1s;
+    animation-fill-mode: both;
+    @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+            animation-delay: 300ms * $i;
+        }  
+      }
 }
 .div-menu {
     @for $i from 1 through 4 {
